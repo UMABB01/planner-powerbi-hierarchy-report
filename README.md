@@ -51,14 +51,14 @@ Task age & schedule
 
 ### 2. Hierarchy Visualization (Levels 1–6)
 Since DirectQuery does not support CTEs or recursive SQL, hierarchy levels are generated using simple SQL CASE logic, allowing:
-
+/
 ├──Parent tasks 
 ├──Subtasks 
 └──Deep nested structures 
 
 ### 3. Gantt‑Style Calendar Page
 A calendar view showing:
-
+/
 ├──Start dates 
 ├──Due dates 
 └──Task progress 
@@ -67,7 +67,7 @@ Note: Calendar view works only for tasks with valid start/end dates.
 
 ### 4. User-Based Access
 Every user sees only:
-
+/
 ├──Projects they are assigned to 
 ├──Tasks they own 
 └──Subtasks underneath their assigned tasks 
@@ -105,4 +105,8 @@ Tasks per user, workload overview
 ### Gantt
 Project Calendar layout based on schedule dates with Assignee
 
-
+lightweight-plant-leaf-disease-detector/
+├── README.md
+├── app.py
+├── lightweight_plant_cnn.pth
+└── requirements.txt
