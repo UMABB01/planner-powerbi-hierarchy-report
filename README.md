@@ -33,11 +33,11 @@ Task-On-Time vs Late vs Completed analysis
 # 🗂 Data Source
 This report uses Dataverse tables (through DirectQuery), specifically:
 
-msdyn_project – Project Information
-msdyn_projecttask – Tasks & subtasks
-msdyn_resourceassignment – User-to-task mapping
-bookableresource – Planner users
-msdyn_plannertask – Task metadata
+### msdyn_projecttask 
+– Tasks, Parenttasks, Project, Progress & Start&End Date  
+### msdyn_resourceassignment 
+– User-to-task mapping
+
 
 ### These tables are joined to create a complete view of Planner activity.
 
