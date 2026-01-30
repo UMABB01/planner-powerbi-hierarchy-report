@@ -1,0 +1,14 @@
+### LET's create 
+
+#MS Planner BI Report
+
+> Requirements
+* PowerBI Desktop
+* MS Planner Premium (MS Project) - Plan
+* Dataverse
+* PowerBI Service (for File upload - consume)
+
+>Start
+* Add Data source in PowerBI
+  └── Dataverse
+* Search for 
