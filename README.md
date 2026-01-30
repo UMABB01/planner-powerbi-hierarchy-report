@@ -51,11 +51,11 @@ This report uses Dataverse tables (through DirectQuery), specifically:
 
 ### 2. Hierarchy Visualization (Levels 1–6)
 Since DirectQuery does not support CTEs or recursive SQL, hierarchy levels are generated using simple SQL CASE logic, allowing:
-'''
+'''  
 * Parent tasks 
 * Subtasks 
-* Deep nested structures 
-'''
+* Deep nested structures  
+'''  
 
 ### 3. Gantt‑Style Calendar Page
 A calendar view showing:
