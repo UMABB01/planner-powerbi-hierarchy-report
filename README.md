@@ -29,3 +29,78 @@ Calendar & Gantt‑style visualizations
 Task-On-Time vs Late vs Completed analysis
 
 ### All visuals dynamically filter based on the projects the user is assigned to.
+
+# 🗂 Data Source
+This report uses Dataverse tables (through DirectQuery), specifically:
+
+msdyn_project – Project Information
+msdyn_projecttask – Tasks & subtasks
+msdyn_resourceassignment – User-to-task mapping
+bookableresource – Planner users
+msdyn_plannertask – Task metadata
+
+### These tables are joined to create a complete view of Planner activity.
+
+# 🔧 Key Features
+## 1. Dynamic Planner Dashboard Shows:
+
+Total tasks
+Tasks per project
+Completed vs On Track vs Late
+Task age & schedule
+
+### 2. Hierarchy Visualization (Levels 1–6)
+Since DirectQuery does not support CTEs or recursive SQL, hierarchy levels are generated using simple SQL CASE logic, allowing:
+
+Parent tasks
+Subtasks
+Deep nested structures
+
+### 3. Gantt‑Style Calendar Page
+A calendar view showing:
+
+Start dates
+Due dates
+Task progress
+
+Note: Calendar view works only for tasks with valid start/end dates.
+
+### 4. User-Based Access
+Every user sees only:
+
+Projects they are assigned to
+Tasks they own
+Subtasks underneath their assigned tasks
+
+This provides natural row-level filtering without RLS configuration.
+
+# 📐 Technical Structure
+Model Highlights
+
+DirectQuery mode for real-time data
+Normalized tables: Tasks → Assignments → Users
+Additional SQL computed columns:
+Level_01, Level_02, … Level_06
+Child_Task (leaf detection)
+Task_Track_Status (Complete / On Track / Late)
+
+# Performance Considerations
+
+No recursive SQL
+No CTE
+No complex calculated tables
+Lightweight DAX for DirectQuery compatibility
+
+# 🖼 Pages in the Report
+
+### Dashboard 
+High-level project and task KPIs
+
+### Project Task 
+DetailsDrill-down hierarchy with visual indicators
+
+### Assignments
+Tasks per user, workload overview
+
+### Gantt
+Project Calendar layout based on schedule dates with Assignee
