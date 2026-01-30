@@ -1,4 +1,4 @@
-# planner-powerbi-hierarchy-report
+# MS Planner Powerbi Hierarchy Report
 Microsoft Planner → Dataverse → Power BI analytics solution featuring multi‑level task hierarchy (up to 6 levels), project progress tracking, user workload insights, and real‑time dashboards powered by DirectQuery. Ideal for PMO teams, task management, and Planner-based project tracking.
 
 >This repository contains a dynamic Power BI report built on top of Microsoft Planner data stored in Dataverse. The report enables users to track tasks, hierarchies, progress, assignments, and project timelines across multiple MS Planner projects — all in real time through DirectQuery.
