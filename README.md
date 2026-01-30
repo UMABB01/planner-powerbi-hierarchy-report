@@ -52,38 +52,37 @@ Task age & schedule
 ### 2. Hierarchy Visualization (Levels 1–6)
 Since DirectQuery does not support CTEs or recursive SQL, hierarchy levels are generated using simple SQL CASE logic, allowing:
 
-Parent tasks  
-Subtasks  
-Deep nested structures  
+-Parent tasks
+-Subtasks
+-Deep nested structures
 
 ### 3. Gantt‑Style Calendar Page
 A calendar view showing:
 
-Start dates
-Due dates
-Task progress
+-Start dates
+-Due dates
+-Task progress
 
 Note: Calendar view works only for tasks with valid start/end dates.
 
 ### 4. User-Based Access
 Every user sees only:
 
-Projects they are assigned to
-Tasks they own
-Subtasks underneath their assigned tasks
+-Projects they are assigned to
+-Tasks they own
+-Subtasks underneath their assigned tasks
 
 This provides natural row-level filtering without RLS configuration.
 
 # 📐 Technical Structure
 Model Highlights
 
-DirectQuery mode for real-time data  
-Normalized tables: Tasks → Assignments → Users  
-
-Additional SQL computed columns:
-Level_01, Level_02, … Level_06  
-Child_Task (leaf detection)  
-Task_Track_Status (Complete / On Track / Late)  
+-DirectQuery mode for real-time data
+-Normalized tables: Tasks → Assignments → Users
+-Additional SQL computed columns:
+ -Level_01, Level_02, … Level_06
+ -Child_Task (leaf detection)  
+ -Task_Track_Status (Complete / On Track / Late)  
 
 # Performance Considerations
 
