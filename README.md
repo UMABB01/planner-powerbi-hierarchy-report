@@ -4,7 +4,7 @@ Microsoft Planner → Dataverse → Power BI analytics solution featuring multi�
 This repository contains a dynamic Power BI report built on top of Microsoft Planner data stored in Dataverse. The report enables users to track tasks, hierarchies, progress, assignments, and project timelines across multiple MS Planner projects — all in real time through DirectQuery.
 
 # Detail Description 
-# A real‑time Power BI analytics solution for Microsoft Planner using Dataverse and DirectQuery.
+### A real‑time Power BI analytics solution for Microsoft Planner using Dataverse and DirectQuery.
 This report visualizes multi‑level task hierarchies, user assignments, project progress, and Gantt‑style scheduling. Designed for organizations using Planner for project management, it enables dynamic dashboards, workload insights, and hierarchy navigation up to 6 levels — all without importing data.
 Features include:
 
@@ -28,4 +28,4 @@ Assignments per user
 Calendar & Gantt‑style visualizations
 Task-On-Time vs Late vs Completed analysis
 
-# All visuals dynamically filter based on the projects the user is assigned to.
+### All visuals dynamically filter based on the projects the user is assigned to.
