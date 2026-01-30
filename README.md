@@ -21,12 +21,12 @@ Dataverse integration with Planner, Tasks, Assignments & Users
 # 🚀 Overview
 Many organizations use Microsoft Planner for team collaboration, but Planner’s native reporting is limited. This BI report solves that by enabling:
 
-Real‑time task monitoring
-Parent–child hierarchical structures (up to 6 levels)
-Project‑wise progress tracking
-Assignments per user
-Calendar & Gantt‑style visualizations
-Task-On-Time vs Late vs Completed analysis
+* Real‑time task monitoring
+* Parent–child hierarchical structures (up to 6 levels)
+* Project‑wise progress tracking
+* Assignments per user
+* Calendar & Gantt‑style visualizations
+* Task-On-Time vs Late vs Completed analysis
 
 ### All visuals dynamically filter based on the projects the user is assigned to.
 
@@ -44,24 +44,24 @@ This report uses Dataverse tables (through DirectQuery), specifically:
 # 🔧 Key Features
 ## 1. Dynamic Planner Dashboard Shows:
 
-Total tasks
-Tasks per project
-Completed vs On Track vs Late
-Task age & schedule
+* Total tasks
+* Tasks per project
+* Completed vs On Track vs Late
+* Task age & schedule
 
 ### 2. Hierarchy Visualization (Levels 1–6)
 Since DirectQuery does not support CTEs or recursive SQL, hierarchy levels are generated using simple SQL CASE logic, allowing:
-/
+'
 ├──Parent tasks 
 ├──Subtasks 
-└──Deep nested structures 
+└──Deep nested structures '
 
 ### 3. Gantt‑Style Calendar Page
 A calendar view showing:
-/
-├──Start dates 
-├──Due dates 
-└──Task progress 
+
+* Start dates 
+* Due dates 
+* Task progress 
 
 Note: Calendar view works only for tasks with valid start/end dates.
 
