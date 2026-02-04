@@ -344,5 +344,12 @@ Watch this video for better understanding of BI Hierarchy `https://youtu.be/iwRq
 
 ## Report View
 
-PBIX will be uploaded soon.
+> Note that the data has been removed from pbix file as its DirectQuery, Add the above data files and measures by same names to get results.
+
+<img width="1307" height="733" alt="image" src="https://github.com/user-attachments/assets/af5ac4e8-44bc-4e11-8bb2-4a41c59624a3" />
+
+<img width="1303" height="733" alt="image" src="https://github.com/user-attachments/assets/92ca066b-8535-426c-9828-cafe4c78b3c9" />
+
+<img width="1307" height="737" alt="image" src="https://github.com/user-attachments/assets/3c7aaa80-36a3-402c-ba4f-58881b20daff" />
+
 
