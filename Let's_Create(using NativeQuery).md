@@ -24,6 +24,9 @@
 * Right click on it and `Transform Data` 
 * Connection Settings to `Direct Query`
 * Navigate to `fx` near code section, it would add new step on right side of `Applied Step`
+
+<img width="1190" height="57" alt="Screenshot 2026-02-04 223238" src="https://github.com/user-attachments/assets/e15dfef7-d87a-440a-b533-90d29c731e8d" />
+
 * Add below code
 ```
 = Value.NativeQuery(Source,"SELECT
