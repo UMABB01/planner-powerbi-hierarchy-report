@@ -1,0 +1,27 @@
+### This is not recommended method but if you want to use PowerQuery Steps. here is the following ...  
+
+# LET's create 
+
+## MS Planner BI Report using Native Query
+
+> Requirements
+* PowerBI Desktop
+* MS Planner Premium (MS Project) - Plan
+* Dataverse
+* PowerBI Service (for File upload - consume)
+
+---
+## DATA uploading
+> Note that you must check whether MS Planner data is present in your Organization, if its on your work id you can check by directly connecting to dataverse from Power BI and Search for `msdyn_projecttask` and `msdyn_resourceassignment`.
+
+> Login with your work/personel Microsoft Id depending where is MS Planner DATA (In PowerBI or if Prompted)
+
+### Part 1/2 of data uploading 
+
+* Add Data source in PowerBI  
+  └── `DATAVERSE`
+* Navigate to the environment of your organization where the MS Planner data located.
+* Right click on it and `Transform Data` 
+* Connection Settings to `Direct Query`
+* Navigate to `fx` near code section 
+
