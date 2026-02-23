@@ -14,7 +14,7 @@
 
 > Login with your work/personel Microsoft Id depending where is MS Planner DATA (In PowerBI or if Prompted)
 
-### Part 1/2 of data uploading 
+### Part 1/2 of data uploading. 
 
 * Add Data source in PowerBI  
   └── `SQL Server database`
